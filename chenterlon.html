@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chenterlon</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- ↓fonts↓ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ↓java script↓ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/main.js"></script>
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div class="logo">
+            <img src="images/logos/logo-cutted.svg" alt="logo">
+        </div>
+        <div class="burger-shadow"></div>
+        <div class="nav">
+            <div class="container">
+                <ul class="clearfix">
+                    <li class="col-3">
+                        <a href="#abouts"><span>全德榮</span></a>
+                    </li>
+                    <li class="col-3 dropdown">
+                        <a href="#products"><span>產品介紹</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#products" class="x-stand-btn"><span>聖誕樹座</span></a></li>
+                            <li><a href="#products" class="x-flowerring-btn"><span>聖誕花圈</span></a></li>
+                            <li><a href="#products" class="x-storage-btn"><span>聖納收納</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="col-3">
+                        <a href="#services"><span>服務項目</span></a>
+                    </li>
+                    <li class="col-3">
+                        <a href="#contact"><span>聯絡我們</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="langs dropdown">
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <ul class="lang dropdown-content">
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <label>
+            <input type="checkbox">
+            <div class="burger-case">
+              <span class="hamburger"></span>
+            </div>
+        </label>
+    </div>
+    <div id="content">  
+        <div id="abouts">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="title">全德榮</h2>
+                    <hr>
+                    <p class="subtitle">chenterlon</p>
+                </div>
+                <div class="flex">
+                    <div class="about col-3">
+                        <div>
+                            <i class="fas fa-ruler-combined"></i>
+                            <h3 class="title">開發</h3>
+                            我們幫客戶設計開發新產品，包括行李箱、背包、軟袋、球袋、收納等車縫整釘製品。
+                        </div>
+                    </div>
+                    <div class="about col-3">
+                        <div>
+                            <i class="fas fa-pen-nib"></i>
+                            <h3 class="title">設計</h3>
+                            我們有設計師可以提供設計、機構、三視圖等OEM或0DM之合作方式。
+                        </div>
+                    </div>
+                    <div class="about col-3">
+                        <div>
+                            <i class="fas fa-clipboard-check"></i>
+                            <h3 class="title">準確</h3>
+                            我們有塑膠3D列印機，可以迅速提供手模確認，使開模更正確。
+                        </div>
+                    </div>
+                    <div class="about col-3">
+                        <div>
+                            <i class="fas fa-cube"></i>
+                            <h3 class="title">品質</h3>
+                            我們有各種測試設備，使物料的品質得到保障。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="title">產品介紹</h2>
+                    <hr>
+                    <div class="row">
+                        <a href="#products" class="button x-stand-btn active">聖誕樹座</a>
+                        <a href="#products" class="button x-flowerring-btn">聖誕花圈</a>
+                        <a href="#products" class="button x-storage-btn">聖誕收納</a>
+                    </div>
+                </div>
+                <div id="x-stand">
+                    <div class="product flex flex-row">
+                        <img src="images/stand1.jpeg" alt="x-stand1">
+                        <img src="images/stand2.jpeg" alt="x-stand2">
+                        <img src="images/stand3.jpeg" alt="x-stand3">
+                        <img src="images/stand4.jpeg" alt="x-stand4">
+                    </div>
+                    <div class="desc">顏色規格：199*688。顏色：紅、綠、黃。可折疊收納。</div>
+                </div>
+                <div id="x-flowerring">
+                    <div class="product flex flex-row">
+                        <img src="images/flowerring1.jpeg" alt="x-flowerring1">
+                        <img src="images/flowerring2.jpeg" alt="x-flowerring2">
+                        <img src="images/flowerring3.jpeg" alt="x-flowerring3">
+                        <img src="images/flowerring4.jpeg" alt="x-flowerring4">
+                    </div>
+                    <div class="desc">顏色規格：199*688。顏色：紅、綠、黃。可折疊收納。</div>
+                </div>
+                <div id="x-storage">
+                    <div class="product flex flex-row">
+                        <img src="images/storage1.jpeg" alt="x-sotrage1">
+                        <img src="images/storage2.jpeg" alt="x-sotrage2">
+                        <img src="images/storage3.jpeg" alt="x-sotrage3">
+                        <img src="images/storage4.jpeg" alt="x-sotrage4">
+                    </div>
+                    <div class="desc">顏色規格：199*688。顏色：紅、綠、黃。可折疊收納。</div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="title">服務項目</h2>
+                    <hr>
+                </div>
+                <div class="flow">
+                    <img src="images/newflow_ch.svg" alt="flow">
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="title">聯絡我們</h2>
+                    <hr>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li>廈門市湖里區悅華路143號之三3樓A單元</li>
+                        <li>
+                            <label>phone：</label>
+                            <a href="tel:+86-592-2622960">+86 592 2622960</a>
+                        </li>
+                        <li>
+                            <label>fax：</label>
+                            <a href="fax:+86-592-2622956">+86 592 2622956</a>
+                        </li>
+                        <li>
+                            <label>email：</label>
+                            <a href="mailto:roger@chenterlon.com.cn">roger@chenterlon.com.cn</a>
+                        </li>
+                        <li>營業時間：上午8:00 － 下午17:00</li>
+                    </ul>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.1698388086415!2d118.10708131544064!3d24.514204865083858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414854ae97a0af5%3A0x3a8243f6645e621a!2z5Lit5ZyL56aP5bu655yB5Y6m6Zeo5biC5rmW6YeM5Yy65oKm5Y2O6LevMTQz5Y-3IOmCruaUv-e8lueggTogMzYxMDA2!5e0!3m2!1szh-TW!2stw!4v1642075536317!5m2!1szh-TW!2stw" width="80%" height="400" style="display: block; border:0; margin: 0 auto;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="flex flex-row">
+        <div><img src="images/logos/logo-name-only.svg" alt="logo"></div>
+        <div>&copy; chenterlon all rights reserved.</div>
+        <div>3F NO. 143-3, Unit A, Tien-an Industrial Park,<br>Huli District, Xiamen Fujian, China 361006</div>
+    </div>
+    <a href="#abouts" id="go-top"><i class="fas fa-chevron-up"></i></a>
+</body>
+</html>

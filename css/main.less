@@ -139,6 +139,24 @@ p {
     }
 }
 
+.burger-shadow{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: @branding-gray;
+    box-shadow: 0 0 0 0 rgb(82, 82, 82);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    &.show{
+        box-shadow: 0 0 0 100vw rgb(82, 82, 82), 0 0 0 100vh rgb(82, 82, 82);
+        border-radius: 0;
+    }
+}
 .nav {
     position: relative;
     background: @branding-gray;
@@ -184,8 +202,20 @@ p {
     }
 }
 
-label input, .burger-case {
+label input{
     display: none;
+}
+.burger-case{
+    display: none;
+    float: right;
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    z-index: 300;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: @branding-gray;
 }
 
 .dropdown {
@@ -333,7 +363,7 @@ label input, .burger-case {
     position: fixed;
     right: 20px;
     bottom: 35px;
-    background: rgba(82, 82, 82, 0.8);
+    background: @branding-gray;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -448,37 +478,11 @@ label input, .burger-case {
     }
 
     .burger-shadow{
-        position: fixed;
-        top: 0;
-        right: 0px;
-        z-index: 100;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: @branding-gray;
-        box-shadow: 0 0 0 0 rgb(82, 82, 82);
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        &.show{
-            box-shadow: 0 0 0 100vw rgb(82, 82, 82), 0 0 0 100vh rgb(82, 82, 82);
-            border-radius: 0;
-        }
+        display: block;
     }
 
     .burger-case {
         display: block;
-        float: right;
-        position: fixed;
-        top: -100px;
-        right: -100px;
-        z-index: 300;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background: @branding-gray;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        box-shadow: 0 0 0 0 @branding-gray, 0 0 0 0 @branding-gray;
     }
 
     .hamburger {

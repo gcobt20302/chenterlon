@@ -109,6 +109,24 @@ p {
   width: 100%;
   height: auto;
 }
+.burger-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9b9c9e;
+  box-shadow: 0 0 0 0 #525252;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.burger-shadow.show {
+  box-shadow: 0 0 0 100vw #525252, 0 0 0 100vh #525252;
+  border-radius: 0;
+}
 .nav {
   position: relative;
   background: #9b9c9e;
@@ -149,9 +167,20 @@ p {
 .nav .langs .lang {
   padding: 0;
 }
-label input,
+label input {
+  display: none;
+}
 .burger-case {
   display: none;
+  float: right;
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  z-index: 300;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #9b9c9e;
 }
 .dropdown {
   position: relative;
@@ -270,7 +299,7 @@ label input,
   position: fixed;
   right: 20px;
   bottom: 35px;
-  background: rgba(82, 82, 82, 0.8);
+  background: #9b9c9e;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -376,36 +405,10 @@ label input,
     justify-content: center;
   }
   .burger-shadow {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    z-index: 100;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #9b9c9e;
-    box-shadow: 0 0 0 0 #525252;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
-  .burger-shadow.show {
-    box-shadow: 0 0 0 100vw #525252, 0 0 0 100vh #525252;
-    border-radius: 0;
+    display: block;
   }
   .burger-case {
     display: block;
-    float: right;
-    position: fixed;
-    top: -100px;
-    right: -100px;
-    z-index: 300;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #9b9c9e;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    box-shadow: 0 0 0 0 #9b9c9e, 0 0 0 0 #9b9c9e;
   }
   .hamburger {
     position: absolute;

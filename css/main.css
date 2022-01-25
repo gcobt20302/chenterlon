@@ -21,6 +21,12 @@ img {
 p {
   line-height: 30px;
 }
+.anchor {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: -150px;
+}
 .container {
   display: block;
   max-width: 900px;
@@ -228,6 +234,17 @@ label input {
 }
 #products {
   margin-bottom: 20px;
+}
+#products .intro button {
+  border: none;
+  background: #222;
+  color: #fff;
+  font-weight: 100;
+  cursor: pointer;
+}
+#products .intro button:hover,
+#products .intro button.active {
+  background: #9b9c9e;
 }
 #products .intro a {
   text-decoration: none;
@@ -474,8 +491,6 @@ label input {
 }
 /* 
 
-
 點選圖片可以放大查看
 
-a[href=#]點下去會被nav切到
  */

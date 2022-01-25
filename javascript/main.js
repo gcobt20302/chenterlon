@@ -4,7 +4,6 @@ $(document).ready(function(){
     screenSize();
     $(window).on('resize',function(){
         if ($(window).width()!=windowWidth) {
-            // Update the window width for next time
             windowWidth = $(window).width();
             screenSize();
         }

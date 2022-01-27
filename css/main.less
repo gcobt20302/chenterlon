@@ -9,6 +9,7 @@
 
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -238,9 +239,9 @@ label input{
     z-index: 10;
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 #content {
     >div {
@@ -325,10 +326,12 @@ label input{
     height: auto;
     border: 1px solid @branding-gray;
     border-radius: 20px 20px 0px 0px;
-
-    img {
+    a{
         width: 20%;
         margin: 5px;
+    }
+    img {
+        width: 100%;
     }
 }
 
@@ -358,6 +361,10 @@ label input{
         text-decoration: none;
         color: #000;
     }
+}
+
+.map iframe{
+    width: 80%;
 }
 
 #footer {
@@ -398,7 +405,7 @@ label input{
     }
 
     .product {
-        img {
+        a{
             width: 30%;
         }
     }
@@ -552,6 +559,9 @@ label input{
             }
         }
     }
+    .map iframe{
+        width: 100%;
+    }
 }
 
 @media (max-width:425px) {
@@ -562,7 +572,7 @@ label input{
         width: 100%;
     }
     .product{
-        img{
+        a{
             width: 45%;
         }
     }
@@ -570,9 +580,3 @@ label input{
         text-align: center;
     }
 }
-
-/* 
-
-點選圖片可以放大查看
-
- */

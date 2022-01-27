@@ -5,6 +5,7 @@
 }
 html {
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Noto Sans TC', sans-serif;
@@ -199,9 +200,9 @@ label input {
   width: 100%;
   z-index: 10;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
 #content > div {
   padding-top: 100px;
 }
@@ -273,9 +274,12 @@ label input {
   border: 1px solid #9b9c9e;
   border-radius: 20px 20px 0px 0px;
 }
-.product img {
+.product a {
   width: 20%;
   margin: 5px;
+}
+.product img {
+  width: 100%;
 }
 .flow img {
   width: 90%;
@@ -296,6 +300,9 @@ label input {
 .info a {
   text-decoration: none;
   color: #000;
+}
+.map iframe {
+  width: 80%;
 }
 #footer {
   padding: 40px 0;
@@ -331,7 +338,7 @@ label input {
   .about {
     width: 50%;
   }
-  .product img {
+  .product a {
     width: 30%;
   }
 }
@@ -474,6 +481,9 @@ label input {
     transform: rotate(90deg);
     top: 0;
   }
+  .map iframe {
+    width: 100%;
+  }
 }
 @media (max-width: 425px) {
   .container {
@@ -482,15 +492,10 @@ label input {
   .about {
     width: 100%;
   }
-  .product img {
+  .product a {
     width: 45%;
   }
   .info li {
     text-align: center;
   }
 }
-/* 
-
-點選圖片可以放大查看
-
- */

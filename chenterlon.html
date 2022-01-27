@@ -7,6 +7,7 @@
     <title>Chenterlon</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <!-- ↓fonts↓ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ↓java script↓ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/lightbox.min.js"></script>
     <script src="javascript/main.js"></script>
 </head>
 <body>
@@ -115,28 +117,64 @@
                 </div>
                 <div id="x-stand">
                     <div class="product flex flex-row">
-                        <img src="images/stand1.jpeg" alt="x-stand1">
+                        <a href="images/stand1.jpeg" data-lightbox="x-stand" data-title="My caption">
+                            <img src="images/stand1.jpeg" alt="x-stand1">
+                        </a>
+                        <a href="images/stand2.jpeg" data-lightbox="x-stand" data-title="My caption">
+                            <img src="images/stand2.jpeg" alt="x-stand2">
+                        </a>
+                        <a href="images/stand3.jpeg" data-lightbox="x-stand" data-title="My caption">
+                            <img src="images/stand3.jpeg" alt="x-stand3">
+                        </a>
+                        <a href="images/stand4.jpeg" data-lightbox="x-stand" data-title="My caption">
+                            <img src="images/stand4.jpeg" alt="x-stand4">
+                        </a>
+                        <!-- <img src="images/stand1.jpeg" alt="x-stand1">
                         <img src="images/stand2.jpeg" alt="x-stand2">
                         <img src="images/stand3.jpeg" alt="x-stand3">
-                        <img src="images/stand4.jpeg" alt="x-stand4">
+                        <img src="images/stand4.jpeg" alt="x-stand4"> -->
                     </div>
                     <div class="desc">顏色規格：199*688。顏色：紅、綠、黃。可折疊收納。</div>
                 </div>
                 <div id="x-flowerring">
                     <div class="product flex flex-row">
-                        <img src="images/flowerring1.jpeg" alt="x-flowerring1">
+                        <a href="images/flowerring1.jpeg" data-lightbox="x-flowerring" data-title="My caption">
+                            <img src="images/flowerring1.jpeg" alt="x-flowerring1">
+                        </a>
+                        <a href="images/flowerring2.jpeg" data-lightbox="x-flowerring" data-title="My caption">
+                            <img src="images/flowerring2.jpeg" alt="x-flowerring2">
+                        </a>
+                        <a href="images/flowerring3.jpeg" data-lightbox="x-flowerring" data-title="My caption">
+                            <img src="images/flowerring3.jpeg" alt="x-flowerring3">
+                        </a>
+                        <a href="images/flowerring4.jpeg" data-lightbox="x-flowerring" data-title="My caption">
+                            <img src="images/flowerring4.jpeg" alt="x-flowerring4">
+                        </a>
+                        <!-- <img src="images/flowerring1.jpeg" alt="x-flowerring1">
                         <img src="images/flowerring2.jpeg" alt="x-flowerring2">
                         <img src="images/flowerring3.jpeg" alt="x-flowerring3">
-                        <img src="images/flowerring4.jpeg" alt="x-flowerring4">
+                        <img src="images/flowerring4.jpeg" alt="x-flowerring4"> -->
                     </div>
                     <div class="desc">顏色規格：199*688。顏色：紅、綠、黃。可折疊收納。</div>
                 </div>
                 <div id="x-storage">
                     <div class="product flex flex-row">
-                        <img src="images/storage1.jpeg" alt="x-sotrage1">
+                        <a href="images/storage1.jpeg" data-lightbox="x-storage" data-title="My caption">
+                            <img src="images/storage1.jpeg" alt="x-sotrage1">
+                        </a>
+                        <a href="images/storage2.jpeg" data-lightbox="x-storage" data-title="My caption">
+                            <img src="images/storage2.jpeg" alt="x-sotrage2">
+                        </a>
+                        <a href="images/storage3.jpeg" data-lightbox="x-storage" data-title="My caption">
+                            <img src="images/storage3.jpeg" alt="x-sotrage3">
+                        </a>
+                        <a href="images/storage4.jpeg" data-lightbox="x-storage" data-title="My caption">
+                            <img src="images/storage4.jpeg" alt="x-sotrage4">
+                        </a>
+                        <!-- <img src="images/storage1.jpeg" alt="x-sotrage1">
                         <img src="images/storage2.jpeg" alt="x-sotrage2">
                         <img src="images/storage3.jpeg" alt="x-sotrage3">
-                        <img src="images/storage4.jpeg" alt="x-sotrage4">
+                        <img src="images/storage4.jpeg" alt="x-sotrage4"> -->
                     </div>
                     <div class="desc">顏色規格：199*688。顏色：紅、綠、黃。可折疊收納。</div>
                 </div>
@@ -150,7 +188,9 @@
                     <hr>
                 </div>
                 <div class="flow">
-                    <img src="images/newflow_ch.svg" alt="flow">
+                    <a href="images/newflow_ch.svg" data-lightbox="flow" data-title="out work flow">
+                        <img src="images/newflow_ch.svg" alt="flow">
+                    </a>
                 </div>
             </div>
         </div>
@@ -180,7 +220,7 @@
                     </ul>
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.1698388086415!2d118.10708131544064!3d24.514204865083858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414854ae97a0af5%3A0x3a8243f6645e621a!2z5Lit5ZyL56aP5bu655yB5Y6m6Zeo5biC5rmW6YeM5Yy65oKm5Y2O6LevMTQz5Y-3IOmCruaUv-e8lueggTogMzYxMDA2!5e0!3m2!1szh-TW!2stw!4v1642075536317!5m2!1szh-TW!2stw" width="80%" height="400" style="display: block; border:0; margin: 0 auto;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.1698388086415!2d118.10708131544064!3d24.514204865083858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414854ae97a0af5%3A0x3a8243f6645e621a!2z5Lit5ZyL56aP5bu655yB5Y6m6Zeo5biC5rmW6YeM5Yy65oKm5Y2O6LevMTQz5Y-3IOmCruaUv-e8lueggTogMzYxMDA2!5e0!3m2!1szh-TW!2stw!4v1642075536317!5m2!1szh-TW!2stw" height="400" style="display: block; border:0; margin: 0 auto;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>

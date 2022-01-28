@@ -231,7 +231,7 @@ label input{
 }
 
 .dropdown-content {
-    display: none;
+    /* display: none; */     /* 好像在手機轉橫拿時會出問題，而且反正js裡已經設定了大於786就要hide */
     position: absolute;
     padding: 0 15px;
     left: 0;
@@ -239,6 +239,9 @@ label input{
     z-index: 10;
 }
 
+/* dropdownContentSlide()如果要運作的話，
+dropdown-content就不能先給他設定display block。
+不然反而會變成「滑鼠移進，內容收起」。 */
 /* .dropdown:hover .dropdown-content {
     display: block;
 } */
@@ -468,7 +471,7 @@ label input{
             }
         }
         .dropdown-content{
-            display: block;
+            /* display: block; */  /* 反正js裡已經設定了小於786就要show */
             position: static;
             padding-left: 40px;
             padding-right: 0;

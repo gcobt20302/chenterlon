@@ -23,7 +23,8 @@ function screenSize(){
     if (matchMedia('(max-width: 768px)').matches){
         $('.nav').hide();
         $('.dropdown-content').show();
-        $('.lang').css( "display", "flex" );    這樣好嗎
+        $('.dropdown').off(); //螢幕寬變窄時，.dropdown還被綁著hover時slideToggle所以+off，成功了！
+        /* $('.lang').css( "display", "flex" );    這樣好嗎 */
         $('.burger-case, .nav a').off();
         $('.burger-case, .nav a').click(function(){
             $('.burger-shadow').toggleClass('show');
@@ -87,5 +88,8 @@ function dropdownContentSlide(){
 }
 
 
-/* 手機-電腦-手機的話，
-語言列會被slideToggle從display:flex弄成display:block */
+/* 
+
+scroll smooth
+
+*/

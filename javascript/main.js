@@ -20,28 +20,24 @@ $(document).ready(function(){
 });
 var windowWidth = $(window).width();
 function screenSize(){
+    $('.dropdown').off();
+    $('.burger-case, .nav a').off();
+    productsButtons();
+    PorL();
     if (matchMedia('(max-width: 768px)').matches){
         $('.nav').hide();
         $('.dropdown-content').show();
-        $('.dropdown').off(); //螢幕寬變窄時，.dropdown還被綁著hover時slideToggle所以+off，成功了！
-        /* $('.lang').css( "display", "flex" );    這樣好嗎 */
-        $('.burger-case, .nav a').off();
         $('.burger-case, .nav a').click(function(){
             $('.burger-shadow').toggleClass('show');
             $('.nav').fadeToggle(500);
         });
-        productsButtons();
         $('.nav a').click(function(){
             $('input').prop('checked',false);
         });
-        PorL();
     }else {
         $('.nav').show();
-        $('.dropdown-content').hide();
-        $('.burger-case, .nav a').off();
+        $('.dropdown-content').stop(true,true).hide();
         dropdownContentSlide();
-        productsButtons();
-        PorL();
     }
 }
 function PorL(){
@@ -82,13 +78,17 @@ function productsButtons(){
     });
 }
 function dropdownContentSlide(){
-    $('.dropdown').hover(function(){
-        $('.dropdown-content', this).stop(true,true).slideToggle();
+    $('.dropdown').mouseenter(function(){
+        $('.dropdown-content', this).stop(true,true).slideDown();
+    });
+    $('.dropdown').mouseleave(function(){
+        $('.dropdown-content', this).stop(true,true).slideUp();
     });
 }
 
 
 /* 
+
 
 scroll smooth
 

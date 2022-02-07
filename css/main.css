@@ -5,7 +5,7 @@
 }
 html {
   font-size: 18px;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth;  !!because of safari, using js instead.!! */
 }
 body {
   font-family: 'Noto Sans TC', sans-serif;
@@ -470,8 +470,8 @@ dropdown-content就不能先給他設定display block。
   }
   .nav .langs {
     top: unset;
-    bottom: 90px;
     right: 50%;
+    bottom: 90px;
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     width: 230px;

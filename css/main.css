@@ -268,7 +268,7 @@ dropdown-content就不能先給他設定display block。
 }
 #products .intro button {
   border: none;
-  background: #222;
+  background: #93b945;
   color: #fff;
   font-weight: 100;
   cursor: pointer;

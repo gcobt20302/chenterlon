@@ -268,14 +268,16 @@ dropdown-content就不能先給他設定display block。
 }
 #products .intro button {
   border: none;
-  background: #93b945;
+  background: #9b9c9e;
   color: #fff;
   font-weight: 100;
   cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 #products .intro button:hover,
 #products .intro button.active {
-  background: #9b9c9e;
+  background: #93b945;
 }
 #products .intro a {
   text-decoration: none;

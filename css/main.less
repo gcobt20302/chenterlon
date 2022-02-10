@@ -84,11 +84,7 @@ p {
     }
 }
 
-.col-2,
-.col-3,
-.col-4,
-.col-6,
-.col-12 {
+.col-2, .col-3, .col-4, .col-6, .col-12 {
     float: left;
     padding: 0 30px;
 }
@@ -115,21 +111,18 @@ p {
 
 .intro {
     text-align: center;
-
     .title {
         margin: 0;
         font-weight: 300;
         font-size: 1.33rem;
         letter-spacing: 2px;
     }
-
     hr {
         border: none;
         height: 2px;
         width: 120px;
         background: #000;
     }
-
     .subtitle {
         margin-top: 0;
         text-transform: uppercase;
@@ -315,13 +308,15 @@ dropdown-content就不能先給他設定display block。
     .intro {
         button {
             border: none;
-            background: @branding-green;
+            background: @branding-gray;
             color: #fff;
             font-weight: 100;
             cursor: pointer;
+            -webkit-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
             &:hover,
             &.active {
-                background: @branding-gray;
+                background: @branding-green;
             }
         }
         a {

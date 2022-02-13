@@ -26,6 +26,7 @@ function screenSize(){
     PorL();
     smoothScroll();
     $('input').prop('checked',false);
+    $('.burger-shadow').removeClass('show');
     if (matchMedia('(max-width: 768px)').matches){
         $('.nav').hide();
         $('.dropdown-content').show();
@@ -38,7 +39,6 @@ function screenSize(){
         });
     }else {
         $('.nav').show();
-        $('.burger-shadow').removeClass('show');
         $('.dropdown-content').stop(true,true).hide();
         dropdownContentSlide();
     }

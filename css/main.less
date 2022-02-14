@@ -523,11 +523,14 @@ dropdown-content就不能先給他設定display block。
             }
         }
         .langs{
+            position: fixed;
             top: unset;
             right: 50%;
-            bottom: 90px;
+            bottom: constant(safe-area-inset-bottom);
+            bottom: env(safe-area-inset-bottom);
             -webkit-transform: translateX(50%);
             transform: translateX(50%);
+            padding-bottom: 20px;
             width: 230px;
             a{
                 margin: 0 auto;
@@ -535,6 +538,9 @@ dropdown-content就不能先給他設定display block。
                 color: #fff;
                 &::before{
                     content: none;
+                }
+                &:not(.earth){
+                    padding: 0px 15px;
                 }
             }
             .lang{

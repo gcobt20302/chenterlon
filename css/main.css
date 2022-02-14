@@ -471,11 +471,14 @@ dropdown-content就不能先給他設定display block。
     padding-right: 5px;
   }
   .nav .langs {
+    position: fixed;
     top: unset;
     right: 50%;
-    bottom: 90px;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
+    padding-bottom: 20px;
     width: 230px;
   }
   .nav .langs a {
@@ -485,6 +488,9 @@ dropdown-content就不能先給他設定display block。
   }
   .nav .langs a::before {
     content: none;
+  }
+  .nav .langs a:not(.earth) {
+    padding: 0px 15px;
   }
   .nav .langs .lang {
     display: flex;
